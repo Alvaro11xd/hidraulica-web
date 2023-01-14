@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <h1>Hola Git</h1>
     <?php
     require_once "./controladores/vistasControlador.php";
     $IV = new VistasControlador();
