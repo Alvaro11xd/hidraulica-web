@@ -12,9 +12,9 @@ function posicionSlide(n){
 }
 
 // FUNCTION PARA QUE EL SLIDER AVANCE DE ACUERDO UN INTERVALO DE TIEMPO
-setInterval(function(){
-    muestraSlides(indice += 1)
-}, 4000)
+// setInterval(function(){
+//     muestraSlides(indice += 1)
+// }, 4000)
 
 function muestraSlides(n){
     let i;

@@ -123,8 +123,10 @@
             <div class="mySlider fade">
                 <img src="<?php echo SERVERURL; ?>vistas/assets/img/fondo2.jpeg" alt="slider1" class="sliderImg">
                 <div class="hero">
-                    <h1 class="heroTitle">UNA GRAN VARIEDAD A SU ALCANCE</h1>
-                    <p class="heroParrafo">Nadie ofrece mayor variedad de mangueras y accesorios que Remarsa Hidraulica S.A.C Con más de 750 tipos de configuraciones. En bicromato de zinc, fabricado por Representaciones Marcos Risco S.A.C.</p>
+                    <div class="heroFondo">
+                        <h1 class="heroTitle2">UNA GRAN VARIEDAD A SU ALCANCE</h1>
+                    </div>
+                    <p class="heroParrafo heroParrafo2">Nadie ofrece mayor variedad de mangueras y accesorios que Remarsa Hidraulica S.A.C Con más de 750 tipos de configuraciones. En bicromato de zinc, fabricado por Representaciones Marcos Risco S.A.C.</p>
                     <a href="#" class="heroBtn">Contáctanos</a>
                 </div>
             </div>
@@ -134,8 +136,8 @@
             <div class="mySlider fade">
                 <img src="<?php echo SERVERURL; ?>vistas/assets/img/fondo3.jpeg" alt="slider1" class="sliderImg">
                 <div class="hero">
-                    <h1 class="heroTitle">ASISTENCIA Y GARANTÍA</h1>
-                    <p class="heroParrafo">En REMARSA. Tendra a su disposición un almacén muy completo para solucionar, en forma rápida y eficaz, cualquier problema hidráulico que su maquinaria pueda sufrir.</p>
+                    <h1 class="heroTitle3">ASISTENCIA Y GARANTÍA</h1>
+                    <p class="heroParrafo heroParrafo3">En REMARSA. Tendra a su disposición un almacén muy completo para solucionar, en forma rápida y eficaz, cualquier problema hidráulico que su maquinaria pueda sufrir.</p>
                     <a href="#" class="heroBtn">Contáctanos</a>
                 </div>
             </div>
@@ -146,6 +148,6 @@
             <span class="barra" onclick="posicionSlide(2)"></span>
             <span class="barra" onclick="posicionSlide(3)"></span>
         </div>
-        
+
     </section>
 </header>

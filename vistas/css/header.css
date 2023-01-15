@@ -42,7 +42,7 @@
     margin: 1em auto;
     position: absolute;
     top: auto;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav-img {
@@ -79,6 +79,7 @@
     display: flex;
     height: 100%;
     align-items: center;
+    font-weight: 500;
 }
 
 .nav-icon {
@@ -139,6 +140,10 @@
     position: relative;
 }
 
+.mySlider{
+    position: relative;
+}
+
 .sliderImg {
     width: 100%;
     max-height: 85vh;
@@ -146,6 +151,7 @@
     object-fit: cover;
     vertical-align: top;
     transition: .2s;
+    opacity: .5;
 }
 
 .barras {
@@ -155,6 +161,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    z-index: 10;
 }
 
 .barra {
@@ -190,6 +197,101 @@
     }
 }
 
+.hero{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+    z-index: 1;
+}
+.heroTitle{
+    font-size: 80px;
+    color: var(--color-phantom2);
+    font-weight: 700;
+    text-shadow: 1px 5px 8px var(--color-gris2);
+    letter-spacing: 2px;
+    word-spacing: 12px;
+}
+.heroTitle::after{
+    content: "";
+    display: block;
+    width: 35%;
+    height: 15px;
+    background-color: var(--color-phantom);
+    margin: 20px auto;
+}
+.heroParrafo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-gris2);
+}
+.heroBtn{
+    color: var(--color-blanco);
+    background: var(--color-phantom);
+    padding: 1em 2em;
+    font-weight: 500;
+}
+.heroFondo{
+    width: 90%;
+    height: 20%;
+    background: var(--color-phantom);
+    border-radius: 10px 0;
+    opacity: .9;
+    display: grid;
+    place-items: center;
+}
+.heroTitle2{
+    color: var(--color-blanco);
+    font-size: 58px;
+}
+.heroParrafo2,
+.heroParrafo3{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    width: 70%;
+    color: var(--color-negro);
+}
+.heroTitle3{
+    font-size: 96px;
+    font-weight: 700;
+}
+.heroParrafo3{
+    width: 45%;
+}
+
+@media (max-width: 1024px){
+    /* SECCION SLIDER*/
+    .heroTitle{
+        font-size: 54px;
+    }
+    .heroTitle::after {
+        width: 30%;
+        height: 7px;
+        background-color: var(--color-phantom);
+        margin: 20px auto 10px;
+    }
+    .heroParrafo {
+        font-size: 32px;
+    }
+    .heroFondo {
+        width: 80%;
+        height: 20%;
+        margin-top: 2em;
+    }
+    .heroTitle2 {
+        font-size: 42px;
+    }
+    .heroParrafo2, .heroParrafo3 {
+        font-size: 20px;
+    }
+    .heroTitle3 {
+        font-size: 72px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -265,6 +367,37 @@
         margin-left: auto;
         border-left: 1px solid var(--color-phantom);
     }
+
+    /* SECCION SLIDER*/
+    .heroTitle{
+        font-size: 42px;
+    }
+    .heroTitle::after {
+        width: 30%;
+        height: 7px;
+    }
+    .heroParrafo {
+        font-size: 26px;
+    }
+    .heroFondo {
+        width: 76%;
+        height: 16%;
+    }
+    .heroTitle2 {
+        font-size: 32px;
+    }
+    .heroParrafo2, .heroParrafo3 {
+        font-size: 17px;
+    }
+    .heroTitle3 {
+        font-size: 54px;
+    }
+    .heroParrafo3 {
+        width: 55%;
+    }
+    .landigePage {
+        height: 83vh;
+    }
 }
 
 @media (max-width: 425px) {
@@ -291,6 +424,58 @@
     .nav-links {
         top: 180px;
     }
+    .nav-img {
+        width: 180px;
+        height: 40px;
+    }
+
+    /* SECCION SLIDER*/
+    .heroTitle{
+        font-size: 24px;
+    }
+    .heroTitle::after {
+        width: 25%;
+        height: 4px;
+    }
+    .heroParrafo {
+        font-size: 16px;
+    }
+    .heroFondo {
+        width: 76%;
+        height: 16%;
+        margin: 0;
+    }
+    .heroTitle2 {
+        font-size: 17px;
+    }
+    .heroParrafo2, .heroParrafo3 {
+        font-size: 11px;
+    }
+    .heroParrafo2{
+        width: 80%;
+    }
+    .heroTitle3 {
+        font-size: 32px;
+    }
+    .heroParrafo3 {
+        width: 80%;
+    }
+    .heroBtn {
+        padding: 11px 14px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .hero {
+        top: 4em;
+        row-gap: 13px;
+    }
+    .landigePage {
+        height: 47vh;
+    }
+    .barra {
+        width: 22px;
+        height: 4px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -300,9 +485,66 @@
         margin: .8em 1.5em;
     }
 
+    /* SECCION NAVBAR */
+    .nav-img {
+        width: 145px;
+        height: 30px;
+    }
+    .menu-img {
+        /* display: block; */
+        width: 28px;
+    }
+
     .info-text {
         margin-left: .5em;
         font-size: 14px;
+    }
+    /* SECCION SLIDER*/
+    .heroTitle{
+        font-size: 21px;
+    }
+    .heroTitle::after {
+        width: 25%;
+        height: 4px;
+    }
+    .heroParrafo {
+        font-size: 14px;
+    }
+    .heroFondo {
+        width: 76%;
+        height: 16%;
+        margin: 0;
+    }
+    .heroTitle2 {
+        font-size: 15px;
+    }
+    .heroParrafo2, .heroParrafo3 {
+        font-size: 11px;
+    }
+    .heroParrafo2{
+        width: 80%;
+    }
+    .heroTitle3 {
+        font-size: 28px;
+    }
+    .heroParrafo3 {
+        width: 80%;
+    }
+    .heroBtn {
+        padding: 11px 14px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .hero {
+        top: 4em;
+        row-gap: 13px;
+    }
+    .landigePage {
+        height: 42vh;
+    }
+    .barra {
+        width: 22px;
+        height: 4px;
     }
 }
 
@@ -315,11 +557,59 @@
 
     /* SECCION NAVBAR */
     .nav-img {
-        width: 200px;
-        height: 55px;
+        width: 145px;
+        height: 30px;
     }
-
     .menu-img {
-        width: 30px;
+        /* display: block; */
+        width: 28px;
+    }
+    /* SECCION SLIDER*/
+    .heroTitle{
+        font-size: 17px;
+    }
+    .heroTitle::after {
+        width: 22%;
+        height: 4px;
+        margin: 7px auto 2px;
+    }
+    .heroParrafo {
+        font-size: 12px;
+    }
+    .heroFondo {
+        width: 76%;
+        height: 16%;
+        margin: 0;
+    }
+    .heroTitle2 {
+        font-size: 12px;
+    }
+    .heroParrafo2, .heroParrafo3 {
+        font-size: 8px;
+    }
+    .heroParrafo2{
+        width: 80%;
+    }
+    .heroTitle3 {
+        font-size: 24px;
+    }
+    .heroParrafo3 {
+        width: 80%;
+    }
+    .heroBtn {
+        padding: 9px 12px;
+        /* font-weight: 500; */
+        font-size: 10px;
+    }
+    .hero {
+        top: 4em;
+        row-gap: 13px;
+    }
+    .landigePage {
+        height: 36vh;
+    }
+    .barra {
+        width: 22px;
+        height: 4px;
     }
 }
