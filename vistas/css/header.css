@@ -1,3 +1,10 @@
+@import url("main.css");
+
+/* HEADER */
+.header {
+    overflow: hidden;
+}
+
 /* SECCION INFO */
 .info {
     width: 100%;
@@ -29,11 +36,13 @@
     height: 70px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 1em auto;
+    position: absolute;
+    top: auto;
+    z-index: 1;
 }
 
 .nav-img {
@@ -114,6 +123,74 @@
     display: block;
     width: 36px;
 }
+
+/* SECCION LANDIGE PAGE */
+.landigePage {
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+}
+
+.slider-contenedor {
+    max-width: 100%;
+    max-height: 85vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.sliderImg {
+    width: 100%;
+    max-height: 85vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: .2s;
+}
+
+.barras {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.barra {
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    margin: 0 10px;
+    background-color: var(--color-gris);
+    /* margin-left: 3px; */
+    cursor: pointer;
+}
+
+.barra:hover {
+    background-color: var(--color-blanco2);
+    transition: background-color .3s;
+}
+
+.active {
+    background-color: var(--color-phantom2);
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -241,6 +318,7 @@
         width: 200px;
         height: 55px;
     }
+
     .menu-img {
         width: 30px;
     }

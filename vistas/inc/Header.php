@@ -1,4 +1,5 @@
-<header>
+<header class="header">
+    <!-- INFO -->
     <section class="info">
         <div class="info-group">
             <img src="./vistas/assets/icons/bxs-map.svg" alt="icon-location" class="info-icon">
@@ -13,10 +14,12 @@
         </div>
     </section>
 
-    <section>
-        <nav class="nav container" id="nav">
+    <!-- SLIDER -->
+    <section class="landigePage">
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="nav" id="nav">
             <a href="<?php echo SERVERURL; ?>principal">
-                <img src="./vistas/assets/img/logo.jpg" alt="logo" class="nav-img">
+                <img src="./vistas/assets/img/logo1.png" alt="logo" class="nav-img">
             </a>
 
             <ul class="nav-links">
@@ -104,5 +107,45 @@
                     <img src="./vistas/assets/icons/bx-x.svg" alt="icon-menu">
                 </a> -->
         </nav>
+
+        <div class="slider-contenedor">
+            <div class="mySlider fade">
+                <img src="<?php echo SERVERURL; ?>vistas/assets/img/fondo1.jpeg" alt="slider1" class="sliderImg">
+                <div class="hero">
+                    <h1 class="heroTitle">REMARSA HIDRÁULICA S.A.C</h1>
+                    <p class="heroParrafo">TU PROVEEDOR DE MANGUERAS HIDRÁULICAS</p>
+                    <a href="#" class="heroBtn">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-contenedor">
+            <div class="mySlider fade">
+                <img src="<?php echo SERVERURL; ?>vistas/assets/img/fondo2.jpeg" alt="slider1" class="sliderImg">
+                <div class="hero">
+                    <h1 class="heroTitle">UNA GRAN VARIEDAD A SU ALCANCE</h1>
+                    <p class="heroParrafo">Nadie ofrece mayor variedad de mangueras y accesorios que Remarsa Hidraulica S.A.C Con más de 750 tipos de configuraciones. En bicromato de zinc, fabricado por Representaciones Marcos Risco S.A.C.</p>
+                    <a href="#" class="heroBtn">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-contenedor">
+            <div class="mySlider fade">
+                <img src="<?php echo SERVERURL; ?>vistas/assets/img/fondo3.jpeg" alt="slider1" class="sliderImg">
+                <div class="hero">
+                    <h1 class="heroTitle">ASISTENCIA Y GARANTÍA</h1>
+                    <p class="heroParrafo">En REMARSA. Tendra a su disposición un almacén muy completo para solucionar, en forma rápida y eficaz, cualquier problema hidráulico que su maquinaria pueda sufrir.</p>
+                    <a href="#" class="heroBtn">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+        </div>
+        
     </section>
 </header>

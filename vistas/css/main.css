@@ -19,7 +19,6 @@
     --color-phantom3: #FF8A00;
     --color-blanco2: #D7D8D9;
 
-    --padding-container: 80px 0;
 }
 
 body {
@@ -36,14 +35,6 @@ a {
 ul {
     list-style: none;
 }
-
-/* .container{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-} */
 
 .nav-icon,
 .info-icon {

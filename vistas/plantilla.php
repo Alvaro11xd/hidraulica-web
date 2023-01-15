@@ -22,12 +22,12 @@
     ?>
 
     <!-- CONTEINER PRINCIPAL -->
-    <main class="container">
+    <main>
         <!-- HEADER -->
         <?php include "./vistas/inc/Header.php"; ?>
 
         <!-- CONTENIDO DE LA PAGINA-->
-        <section class="container">
+        <section>
             <?php
             include $vistas;
             ?>
